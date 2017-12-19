@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <main>
+        <header class="search">
+        <img id="back-button" data-src="/img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>
+           <div id="search-button"> <img id="search-img" class="iconic iconic-md" src="./img/magnifying-glass.svg" alt="Search" title="search" /></div>
+            <input type="text" id="search-input" placeholder="search" />
+           
+            
+        </header>
+        
+        <div class="page active" id="search-results">
+            <section class="title"></section>
+            <h1> Please enter your movie selection in the above search bar</h1>
+            <section class="content">
+                
+                 <!-- <div class="movie">
+                  
+                   <img class="poster" alt="movie poster"> 
+<h2 class="movie-title>Title</h2>
+<p class="movie-desc">Description</p>
+                    
+                </div>-->
+                <div class="attribution">
+                    <img src="img/powered-by-rectangle-green.svg" alt="The Movie image">
+                </div>
+            </section>
+        </div>
+       
+         
+        <div class="page" id="recommended-results" >
+            <section class="search">Extended Recommendation</section>
+            <h1>Extended Search</h1>
+            <section class="content"></section>
+               </div>
+               
+           
+    </main>
+    
+    <div class="loading not">
+        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular"/>
+    </div>
+    
+<!--
+    <div class="attribution">
+        <img src="./img/powered-by-rectangle-blue.svg" alt="The Movie DB" />
+        
+    </div>
+-->
+  
+    
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+ 
+      <footer class="footer" role="contentinfo">
+            <p>&copy; Ferrel Son son00020</p>
+        </footer>
+    
+</html>

@@ -1,0 +1,196 @@
+/*************************
+DEFAULT
+*************************/
+
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    }
+body{
+    color: aquamarine;
+    background-color: black;
+    
+}
+
+h1{
+    padding-bottom: 2rem;
+    font-family: 'Limelight', cursive;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+     color: fuchsia;
+}
+
+section{
+    padding: 1rem 0;
+}
+button {
+		width:8rem;
+		height:2rem;
+	}
+/*******************************
+NAVIGATION
+********************************/
+.page{
+    display:none;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.page.active{
+    display:block;
+    padding: 3rem;
+}
+.movie{
+	margin-bottom: 2rem;
+	
+}
+.not{
+    display: none;
+}
+#search-img{
+	width:2rem;
+}
+#back-button{
+	transform: scale(-100%)
+}
+/*******************************
+SEARCH BAR
+********************************/
+.search{
+    position:fixed;
+    z-index: 100;
+    top:0;
+    right: 0;
+    left: 0;
+    height:1rem;
+    
+}
+#search-input{
+    
+    position: absolute;
+    z-index: 110;
+    height: 3rem;
+    left: 0;
+    top: 0;
+    right: 1.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    background-color: silver;
+    color: white;
+
+}
+
+#search-button{
+    position: absolute;
+    background-color: lightgreen;
+    z-index: 120;
+    height:3rem;
+    width: 3rem;
+    right: 0;
+    top: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    
+   
+}
+/*******************************
+SEARCH RESULTS
+********************************/
+.movie{
+    max-width: 800px;
+    padding: 2rem;
+    border: 1px solid silver;
+    overflow: auto;/* make the border wrap floated children*/
+    clear: both;
+	
+}
+
+.poster{
+    float:left;
+    margin: 0 0.5rem 0.5rem 0;
+    width: 150px;
+    height: auto;
+    min-height: 150px;
+}
+.movie-title{
+    font-size: 2rem;
+    color: chartreuse;
+}
+.movie-desc{
+  font-size: 1rem; 
+    color: fuchsia;
+}
+.attribution{
+    text-align: center;
+    width: 12rem;
+    margin: auto;
+    margin-top: 45%;
+}
+.attribution img{
+    width:100%;
+    height: auto;
+    transform:rotate(0deg);
+    transition: transform 
+    }
+.attribution img:hover{
+    transform:rotate(360deg);
+}
+/*******************************
+MEDIA QUERRY
+*******************************/
+
+.loading {
+    display: none;
+}
+
+
+@media screen and (min-width:850px){
+    .attribution{
+        margin-top: 35%;
+    }
+    
+    #search-input {
+    font-size: 1rem;
+}
+@media screen and (min-width:1200px){
+	.movie{width:50%;
+	float: left;}
+    .page{
+        margin: 6rem 11rem;
+    }
+    #search-input{
+        width: 70%;
+    }
+    .attribution{
+        margin-top: 25%;
+    }
+}
+	
+/*******************************
+RECOMMENDATION
+********************************/
+
+
+    
+    
+/*****************************
+FOOTER
+******************************/
+    .footer {
+        outline-color: silver;
+        color:fuchsia;
+        text-align: center;
+        font-family: 'Limelight', cursive;
+
+    }
